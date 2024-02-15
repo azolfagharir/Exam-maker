@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <button type="button" class="btn btn-light justify-content-center data-bs-toggle="modal" data-bs-target="#myModal">loin/sighn up</button>
+                        <button type="button" class="btn btn-light justify-content-center" data-bs-toggle= "modal" data-bs-target="#myModal">loin/sighn up</button>
                         <div class="modal" id="myModal">
                             <div class="modal-dialog">
                               <div class="modal-content">
@@ -33,7 +33,23 @@
                           
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                  Modal body..
+                                    <form action="/action_page.php">
+                                        <div class="mb-3 mt-3">
+                                          <label for="email" class="form-label">Email:</label>
+                                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="pwd" class="form-label">Password:</label>
+                                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                        </div>
+                                        <div class="form-check mb-3">
+                                          <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                          </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form>
+                            </div>
                                 </div>
                           
                                 <!-- Modal footer -->
@@ -41,14 +57,7 @@
                                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                                 </div>
                           
-                                    </div>
-                                    <div class="modal-body">
-                                        <form action="" class="">
-                                          <input type="name" id="name" class="form-control">
-                                          <label for="name"></label>
-                                        </form>
-                                    </div>
-                                </div>
+                                    
                             </div>
                         </div>
                     </li>
@@ -121,8 +130,8 @@
 
             </div>
             <footer class="card footer d-flex flex-column mb-3">
-                    <div class="row footer">
-                        <div class="col">
+                    <div class="row ">
+                        <div class="col ps-5 ms-5">
                             <p><a href="./contact_us.html">contact us</a></p>
                             <p><a href="./about_us.html">about us</a></p>
                             <p><a href="./why_us.html">why us</a></p>
