@@ -23,20 +23,29 @@
     -webkit-box-shadow: 23px 28px 30px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: 23px 28px 30px -9px rgba(0,0,0,0.75);
 }
+.box1{
+    background-color: #7777;
+    width: 100%;
+}
 .widt_fuul{
     width: 100%;
     height: 100px;
+    
     box-shadow:0px;
 }
 .footer{
     background-color:  #182c5c;
+
 }
 a{
     text-decoration: none;
     color: white;
 }
-.start{
-    background-color:  #2596be;
-    width: 180px;
-    height: 40px;
-}
+/*
+.start_btn{
+    left: 10%;
+    position: absolute;
+    top: 20px;
+    font-size: 40px;
+    height: 70px;
+}*/
