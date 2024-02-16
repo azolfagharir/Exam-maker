@@ -1,12 +1,15 @@
 
-
+*{
+    list-style-type:none;
+}
 .background{
     background-image: url(/images/back.png);
+    background-color: #305cbc;
     width: 100%;
     height: 100%;
 }
 .card-body-1{
-    background-color: #7777;
+    background-color: #d0cccc;
     padding: 15px;
 }
 .card-body-3{
@@ -16,17 +19,14 @@
     list-style-type:none;
 }
 .bg-color{
-    background-color:  #7777;
+    background-color:  #ffffff77;
     margin: 3px;
-    border-radius: 35px;
-    box-shadow: 23px 28px 30px -9px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 23px 28px 30px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: 23px 28px 30px -9px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    box-shadow: -1px 10px 80px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 10px 80px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 80px 0px rgba(0,0,0,0.75);
 }
-.box1{
-    background-color: #7777;
-    width: 100%;
-}
+
 .widt_fuul{
     width: 100%;
     height: 100px;
@@ -41,11 +41,150 @@ a{
     text-decoration: none;
     color: white;
 }
-/*
-.start_btn{
-    left: 10%;
+
+
+    /* Custom CSS to override Bootstrap styles */
+    .options {
+        margin: 0;
+      }
+      
+      .list-group {
+        line-height: 1.5;
+      }
+      
+      .container {
+        max-width: 100%;
+      }
+      
+      .bg-light {
+        padding: 0;
+      }
+      
+    @media (max-width: 576px) {
+        /* Responsive adjustments for small devices */
+        .omit_dots li {
+            padding: 5px 10px; /* Adjust padding for smaller screens */
+        }
+    }
+    .navbar-nav {
+        float: right; /* Or use flexbox */
+      }
+      
+      .navbar-nav .nav-item {
+        float: right; /* Or use flexbox */
+        margin-right: 10px;
+      }
+      .navbar-nav .nav-item .nav-link.signup{
+        color: #305cbc;
+      }
+      .login{
+        padding: 10px 20px;
+        background-color: #305cbc; 
+        border: 1px solid  #182c5c;
+        border-radius: 4px ;
+      }
+      .signup{
+        padding: 10px 20px;
+        background-color: #182c5c;
+        color: #305cbc;
+        border: 1px solid  #182c5c;
+        border-radius: 4px ;
+      }
+      @media (min-width:1000px) {
+      
+      }
+
+      /* Mobile Portrait (up to 320px) */
+@media (max-width: 320px) {
+  .starting{
+    margin-left: 20%;
+  }
+  
+}
+
+/* Mobile Landscape (321px to 767px) */
+@media (min-width: 321px) and (max-width: 575px) {
+  .starting{
+    margin-left: 37%;
+    margin-bottom: 20px;
+
+  }
+  
+
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 576px) and (max-width: 1023px) {
+  
+  .starting{
     position: absolute;
-    top: 20px;
+    top: 350px;
+    margin-left: 60px;
+    font-size: 25px;
+  }
+  .background{
+    height: 769px;
+  }
+
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1024px) {
+  
+  .card-body-3{
+    height: 400px;
+    z-index: 10;
+
+}
+.omit_dots{
+    height: 250px;
+    z-index: 10;
+
+  
+}
+.omit_dots .item-list{
+    font-size: 80px;
+    z-index: 10;
+
+
+}
+.list-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+  }
+  .hellowrold{
+    background-color: #d0cccc;
+  }
+  .list-item {
+    text-align: center;
+    line-height: 30px; /* Adjust as needed */
+    z-index: 10;
+    background-color: #d0cccc;
+
+  }
+  .card-body-3{
+    background-color: #d0cccc;
+    -webkit-box-shadow: 5px 5px 18px 5px #000000; 
+box-shadow: 5px 5px 18px 5px #000000;
+  }
+  
+  .my_box{
+    position: absolute;
+    top: 420px;
+    width: 100%;
+    height: 200px;
+    background-color: #d0cccc;
+    z-index: 1;
+  }
+  .starting{
     font-size: 40px;
-    height: 70px;
-}*/
+    position: absolute;
+    top: 470px;
+    right: 1000px;
+    z-index: 10;
+  }
+
+}
