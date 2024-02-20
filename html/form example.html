@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student</title>
+    <title>form example</title>
     <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/css/if_student.css">
 </head>
 <body class="background">
-  <div>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+<div class=" ">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
       <div class="container-fluid">
           <a class="navbar-brand "  href="./index.html"><img width="40px" height="40px" class="rounded-circle" src="/images/New Project.jpg" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -40,17 +40,25 @@
         </div>
       </div>
     </nav>
-    
-
-    </div>   
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <select name="" id="">
+            <option value="">dewew</option>
+            <option value="">dewew</option>
+        </select>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     <footer>
-      <footer>
         <div class="card install-back fixed-bottom">
             <button class="btn btn-light mt-1 start-0 position-absolute">نصب</button>
             <div class="end-0 card-text mt-1 card-text-footer text-light">برای تجربه بهتر برنامه آزمون ساز را نصب کن</div>
         </div>
 </footer>
-</footer>
-</body>
+        
+
 </body>
 </html>
