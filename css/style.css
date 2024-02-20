@@ -85,6 +85,22 @@ a{
         .omit_dots li {
             padding: 5px 10px; /* Adjust padding for smaller screens */
         }
+        .signup{
+          position: absolute;
+          top: 10px;
+          margin-left: 135px;
+
+          font-size: 10px;
+          background-color: #28242c;
+          border: #28242c;
+        }
+        .login{
+          top: 10px;
+          margin-left: 35px;
+          font-size: 10px;
+          background-color: #28242c;
+          border: #28242c;
+        }
     }
     .navbar-nav {
         float: right; /* Or use flexbox */
@@ -130,6 +146,16 @@ a{
 
 }
 
+@media(max-width: 1178px) and (min-width:1023px){
+  .login{
+    font-size: 29px;
+
+  }
+  .signup{
+  font-size: 29px;
+    
+  }
+}
 /* Tablet (768px to 1023px) */
 @media (min-width: 576px) and (max-width: 1023px) {
   
@@ -141,6 +167,16 @@ a{
   }
   .background{
     height: 769px;
+  }
+  .login{
+    font-size: 20px;
+    left: 30px;
+
+  }
+  .signup{
+  font-size: 20px;
+  left: 160px;
+    
   }
 
 }
@@ -203,4 +239,4 @@ box-shadow: 5px 5px 18px 5px #000000;
     z-index: 10;
   }
 
-}
+
