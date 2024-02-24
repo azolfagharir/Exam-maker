@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-
+    <style>
+      .my-close-btn{
+        position: absolute;
+          top: 640px;
+          left: 1515px;
+      }
+    </style>
 </head>
 <body class="background">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
@@ -54,6 +60,7 @@
           <li class="list-group-item"><a class="text-primary" href="./homeworks_stu.html">ایجاد تکلیف</a></li>
           <li class="list-group-item"><a class="text-primary" href="./dashboard.html">داشبورد</a></li>
           <li class="list-group-item"><a class="text-primary" href="./account.html">حساب کاربری</a></li>
+          <li class="list-group-item"><a class="text-primary" href="./account.html">پیام</a></li>
         </ul>
       </div>
       <br>
@@ -62,27 +69,40 @@
       <br>
       <p><a href="./result_h_e_s.html">مشاهده نتایج</a></p>
 
-      <h4><a href=""></a></h4>
+      <h4 class="text-center">امتحانات اخیر</h4>
       <div class="container bg-light">
         <div class="row row-cols-3">
-          <div class="col">شرکت نکرده</div>
-          <div class="col">شرکت کرده</div>
+          <div class="col">کلاس </div>
           <div class="col">درس</div>
+          <div class="col">تاریخ</div>
         </div>
         <div class="row row-cols-3">
-          <div class="col">0</div>
-          <div class="col">0</div>
-          <div class="col">ریاضی</div>
+          <div class="col">203</div>
+          <div class="col">طراحی وب</div>
+          <div class="col">11/10/1402</div>
         </div>
       </div>
+     
+      <footer class="my-footer">
+        <button type="button" class="btn-close my-close-btn text-light bg-danger top-800" onclick="closeFooter();" aria-label="Close"></button>
 
-      <footer>
+        <div class="card install-back fixed-bottom ">
 
-        <div class="card install-back fixed-bottom">
             <button class="btn btn-light mt-1 start-0 position-absolute">نصب</button>
             <div class="end-0 card-text mt-1 card-text-footer text-light">برای تجربه بهتر برنامه آزمون ساز را نصب کن</div>
+
         </div>
-</footer>
+    </footer>
+    
+    <script>
+        let footer = document.getElementsByClassName("my-footer")[0];
+    
+        function closeFooter() {
+            footer.style.display = 'none';
+        }
+    </script>
+    
+
 <script> 
   var role = true;
 
