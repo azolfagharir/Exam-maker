@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #00008B;
+            background-image: url("back.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .navbar-scroll .nav-link,
+        .navbar-scroll .navbar-toggler-icon,
+        .navbar-scroll .navbar-brand {
+            color: #fff;
+        }
+
+        
+        .navbar-scrolled .nav-link,
+        .navbar-scrolled .navbar-toggler-icon,
+        .navbar-scrolled .navbar-brand {
+            color: #fff;
+        }
+
+       
+        .navbar-scroll,
+        .navbar-scrolled {
+            background-color: #cbbcb1;
+        }
+        .nav-item{
+            color: #ddd;
+            }
+        .mask-custom {
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, .15);
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+            margin-right: auto;
+        }
+
+        .navbar-nav {            
+            margin-left: auto;
+        }
+
+        .news-article {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, .15);
+            -webkit-mask-image: var(--mask, none);
+            mask-image: var(--mask, none);
+        }
+
+        .news-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-title {
+            color: #343a40;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: rgb(255, 255, 255)
+        }
+        .news-summary {
+            color: #555;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span style="color: #4bebe3;">Exam</span><span style="color: #fff;">ito</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">               
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ارتباط با ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">درباره ی ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">چرا ما</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">خبرنامه</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">شبکه های اجتماعی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+</header>
+
+
+<section>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="news-article">
+                    <img src="https://via.placeholder.com/800x400" alt="News Image" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        <p class="news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum leo vel libero lacinia, sed maximus est ullamcorper. Nullam porta odio a mi mattis, vel finibus magna ullamcorper.</p>
+                    </div>
+                </div>
+                <div class="news-article">
+                    <img src="https://via.placeholder.com/800x400" alt="News Image" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        <p class="news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum leo vel libero lacinia, sed maximus est ullamcorper. Nullam porta odio a mi mattis, vel finibus magna ullamcorper.</p>
+                    </div>
+                </div>
+                <div class="news-article">
+                    <img src="https://via.placeholder.com/800x400" alt="News Image" class="news-image">
+                    <div class="news-content">
+                        <h3 class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+                        <p class="news-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum leo vel libero lacinia, sed maximus est ullamcorper. Nullam porta odio a mi mattis, vel finibus magna ullamcorper.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
