@@ -3,9 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
+    <style>
+        #contact_body{
+      font-family: Arial, sans-serif;
+      background-color: #0f457b;
+      animation: fadeInAnimation ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+.nav-bar-for-main{
+color: white;
+}
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .contact-section {
+      background-color: #81c6ee;
+      padding: 60px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-heading {
+      color: #343a40;
+      font-size: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact-info {
+      list-style-type: none;
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info li {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      color: #007bff;
+      margin-right: 10px;
+    }
+
+    .social-icons {
+      list-style-type: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .social-icons i {
+      font-size: 24px;
+      color: #007bff;
+      transition: color 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #28a745;
+    }
+
+.social-icons:hover {
+  color: #541990;
+} 
+
+    </style>
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark mask-custom bg-dark">
+    <a class="navbar-brand" href="#"><span style="color: #567ce4;">Exam</span><span style="color: #fff;">ito</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">ارتباط با ما</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">درباره ی ما</a>
+        </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="#">چرا ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">خبرنامه</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="#">شبکه های اجتماعی</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+ <br>
+ <br>
+ <br>
+
+  <div class="container contact-section">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="contact-heading">درباره ی ما</h2>
+        <ul class="contact-info">
+          <span>    
+              
+              <li><i class=matn></i>به وبسایت ما خوش آمدید. تیم توسعه وب اگزمیتو همواره میکوشد تا بهترین سرویس ها را برای شما کاربران عزیز ارائه کند . امیدواریم که شما عزیزان ما را در این مسیر همراهی کنید و نظراتتان را در شبکه های اجتماعی با ما به اشتراک بگذارید </li>
+              <li><i class="matn"></i> هدف ما این است که در سایه حمایت شما به بالاترین سطح ممکن برسیم و همچنین در این مسیر بتوانیم رضایت همه جانبه ی شما عزیزان را کسب کنیم.</li>
+              <li><i class=matn></i>This project is an online platform designed to create and manage exams. It provides a user-friendly interface for educators to create exams for students to take them. The website has been developed by a dedicated team of backend and frontend developers, along with a graphic designer.</li>
+              <!-- <p class="fas fa-phone">+98 000 000 000</p>-->
+          </span>
+          
+        </ul>
+        <ul class="social-icons">
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
