@@ -2,10 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Examino</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body class="background">
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand "  href="./index.html"><img width="40px" height="40px" class="rounded-circle" src="/images/New Project.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="./contact_us.html">ارتباط با ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about_us.html">درباره ی ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./why_us.html">چرا ما</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" href="./why_us.html"> خبر نامه</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./why_us.html">شبکه های اجتماعی</a>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown"><img width="50px" height="50px" src="/images/boy.png" alt="image"></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./dashboard.html">داشبورد</a></li>
+                  <li><a class="dropdown-item" href="./homeworks_stu.html">امتحانات</a></li>
+                  <li><a class="dropdown-item" href="./exams_stu.html">تکالیف</a></li>
+                </ul>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button type="button" class="btn text-center mt-5 ms-5" data-bs-toggle="modal" data-bs-target="#myModal">
+        <div class="container me-4 flex justify-content-center ">
+            <div class="container bg-light">
+              <div class="row row-cols-3">
+                <div class="col text-primary">کلاس </div>
+                <div class="col text-primary">درس</div>
+                <div class="col text-primary">تاریخ</div>
+            </div>
+                        
+          <div class="row row-cols-3 ">
+            <div class="col text-primary">203</div>
+            <div class="col text-primary">طراحی وب</div>
+            <div class="col text-primary">11/10/1402</div>
+                <h2 class="text-dark text-center">شروع</h2>
+    </button>
+    </div>
     
+  
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">آزمون طراحی وب</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>کاربرد تابع را مشخص کنید</p>
+          <br>
+          <form action="" id="myForm">
+            <div class="mb-3 mt-3">
+              <label for="first" class="form-label">راحت تر کردن فهم کد</label>
+              <input type="radio" class="form-control" id="first" name="myRadio">
+            </div>
+            <div class="mb-3">
+              <label for="second" class="form-label">تکرار کردن</label>
+              <input type="radio" class="form-control" id="second" name="myRadio">
+            </div>
+            <div class="mb-3">
+              <label for="third" class="form-label">چاپ</label>
+              <input type="radio" class="form-control" id="third" name="myRadio">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+
+
+                          </div>     
+                         <div>
+                            <footer>
+                                <div class="card install-back fixed-bottom">
+                                    <button class="btn btn-light mt-1 start-0 position-absolute">نصب</button>
+                                    <div class="end-0 card-text mt-1 card-text-footer text-light">برای تجربه بهتر برنامه آزمون ساز را نصب کن</div>
+                                </div>
+                        </footer>
+
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("myForm");
+      const submitButton = form.querySelector("button[type='submit']");
+  
+      submitButton.addEventListener("click", function(event) {
+        const checkedRadio = document.querySelector('input[name="myRadio"]:checked');
+        if (!checkedRadio) {
+          event.preventDefault(); // Prevent form submission if no radio is checked
+          alert("Please select an option before submitting the form.");
+        }
+      });
+    });
+  </script>
+  
 </body>
 </html>
