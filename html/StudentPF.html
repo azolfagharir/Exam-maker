@@ -1,1 +1,200 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    #TeacherProfileBackground {
+        background-image: url(./back.png);
+        background-color: #072e99; /* Setting the background color after the background image */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+        .navbar {
+            background-color: #343a40 !important; /* Dark color for navbar */
+        }
+
+        .navbar-brand {
+            color: #567ce4 !important; /* Color for "Examito" */
+        }
+
+        .navbar-brand span {
+            color: #fff !important; /* Color for "ito" */
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important; /* Color for nav links */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #567ce4 !important; /* Hover color for nav links */
+        }
+
+        .main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 300px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-info label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .profile-info input[type="text"],
+        .profile-info select {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            text-align:right;
+        }
+
+        .profile-info select {
+            width: 100%;
+        }
+
+        .profile-info button {
+            background-image: url(back.png);
+            background-color: #1851bb;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px) {
+            .main {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+        }
+
+        .profile-card {
+            max-width: 400px;
+        }
+
+
+    </style>
+</head>
+<body id = "TeacherProfileBackground">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><span>Exam</span><span>ito</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">ارتباط با ما</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">درباره ی ما</a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="#">چرا ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">خبرنامه</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">شبکه های اجتماعی</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="profile-card">
+            <div class="profile-picture">
+                <img src="data:image/jpeg;base64,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" alt="Profile Picture">
+            </div>
+            <h2>🌸دانش آموز🌸</h2>
+            <div class="profile-info">
+                <label for="username">:نام</label>
+                <input type="text" id="username" value="حسن">
+                <label for="userfamily">:نام خانوادگی</label>
+                <input type="text" id="userfamily" value="قلی">
+                <label for="email">:ایمیل</label>
+                <input type="text" id="email" value="Kobe.gholi@gmail.com">
+                <label for="gender">:جنسیت</label>
+                <select name="gender" id="gender">
+                    <option value="male">خانم</option>
+                    <option value="female">اقا</option>
+                    
+                </select>
+                <label for="age">:سن</label>
+                <input type="text" id="age" value="40">
+                <label for="city">استان</label>
+                <select name="language" id="city">
+                    <option value="tehran">تهران</option>
+                    <option value="yazd">یزد</option>
+                    <option value="mashhad">مشهد</option>
+                    <option value="ect">...</option>
+                </select>
+                <label for="country">:ملیت</label>
+                <select name="country" id="country">
+                    <option value="iranian">ایرانی</option>
+                    <option value="etc">...</option>
+                  
+                </select>
+                <button>Save / ذخیره</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
