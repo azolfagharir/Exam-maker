@@ -3,9 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+      <title>Contact Us</title>
+ <link rel="stylesheet" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+ 
+#contact_body{
+      font-family: Arial, sans-serif;
+      background-color: #0f457b;
+      animation: fadeInAnimation ease 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+.nav-bar-for-main{
+color: white;
+}
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .contact-section {
+      background-color: #81c6ee;
+      padding: 60px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-heading {
+      color: #343a40;
+      font-size: 40px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact-info {
+      list-style-type: none;
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-info li {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      color: #007bff;
+      margin-right: 10px;
+    }
+
+    .social-icons {
+      list-style-type: none;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .social-icons i {
+      font-size: 24px;
+      color: #007bff;
+      transition: color 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #28a745;
+    }
+
+.social-icons:hover {
+  color: #541990;
+} 
+
+
+ 
+</style>
 </head>
 <body>
-    
+      <nav class="navbar navbar-expand-lg navbar-dark mask-custom bg-dark">
+    <a class="navbar-brand" href="#"><span style="color: #567ce4;">Exam</span><span style="color: #fff;">ito</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">ارتباط با ما</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">درباره ی ما</a>
+        </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="#">چرا ما</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">خبرنامه</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">شبکه های اجتماعی</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+ <br>
+ <br>
+ <br>
+
+  <div class="container contact-section">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="contact-heading">شبکه های اجتماعی</h2>
+        <ul class="contact-info">
+          <span>    
+              <li><i class="fas fa-phone"></i>Phone: +98 (000) 000 0000</li>
+                  <!-- <p class="fas fa-phone">+98 000 000 000</p>-->
+          </span>
+          <li><i class="fas fa-envelope"></i> Email: ResalatHub@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Address: Khiaban ValiAsr Nareside Be Chahar rah Taleghani Honarestan Resalat</li>
+        </ul>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram" style="color: #c32aa3;"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in" style="color: #0077b5;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
