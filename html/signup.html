@@ -18,28 +18,41 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">ثبت نام</h2>
+              <h2 class="text-uppercase text-center mb-5 mt-5">ثبت نام</h2>
 
               <form >
 
-                <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                <div class="form-outline mb-4">                  
                   <label style="float: right;" class="form-label" for="form3Example1cg">نام</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
                   <label style="float: right;" class="form-label" for="form3Example3cg">ایمیل</label>
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
                 </div>
 
+
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <label style="float: right;" class="form-label" for="classSelect">نقش</label>
+                    <select class="form-control" id="classSelect">
+                      <option>معلم</option>
+                      <option>دانش آموز</option>
+                      <!-- و غیره -->
+                    </select>
+  
+                </div>
+
+
+                <div class="form-outline mb-4">
                   <label style="float: right;" class="form-label" for="form3Example4cg">رمز عبور</label>
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
-                  <label style="float: right;" class="form-label" for="form3Example4cdg">تکرار رمز عبور</label>
+
+                  <label style="float: right;" class="form-label" for="form3Example5cdg">تکرار رمز عبور</label>
+                  <input type="password" id="form3Example5cdg" class="form-control form-control-lg" />
                 </div>
 
                 <div class="form-check d-flex justify-content-center mb-5">
@@ -69,5 +82,6 @@
     </div>
   </div>
 </section>
+
 </body>
 </html>
