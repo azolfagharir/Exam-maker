@@ -1,103 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-  <title>صفحه ایجاد تکالیف</title>
-</head>
-<style>
-  .install-back{
+  <title>صفحه آزمون برای معلم</title>
+  <style>
+.install-back{
     background-color: #162f5f;
     height: 50px;
   }
   .card-text-footer{
-    position: absolute;
-    float: right;
-  }
-</style>
-<body style="background-color: #305cbc;">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-      <title>صفحه ایجاد تکلیف برای معلم</title>
-    </head>
-    <body>
-      <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
-        <div class="container-fluid">
-            <a class="navbar-brand "  href="./index.html"><img width="40px" height="40px" class="rounded-circle" src="/images/New Project.jpg" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              
-              
-              <li class="nav-item">
-                <a class="nav-link" href="./about_us.html">درباره ی ما</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="./why_us.html">شبکه های اجتماعی</a>
-              </li> 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown"><img width="50px" height="50px" src="/images/boy.png" alt="image"></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./dashboard.html">داشبورد</a></li>
-                  <li><a class="dropdown-item" href="./homeworks_stu.html">امتحانات</a></li>
-                  <li><a class="dropdown-item" href="./exams_stu.html">تکالیف</a></li>
-                </ul>
-              </li>      
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <br>
-      <div class="container">
-        <h2 class="text-light" style="text-align: center; ">صفحه ایجاد تکلیف برای معلم</h2>
-        <form>
-          <div class="form-group">
-            <label for="classSelect">نام کلاس:</label>
-            <select class="form-control" id="classSelect">
-              <option>کلاس ۱</option>
-              <option>کلاس ۲</option>
-              <option>کلاس ۳</option>
-              <!-- و غیره -->
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="lessonSelect">نام درس:</label>
-            <select class="form-control" id="lessonSelect">
-              <option>ریاضی</option>
-              <option>فیزیک</option>
-              <option>زبان انگلیسی</option>
-              <!-- و غیره -->
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="assignmentText">متن تکلیف:</label>
-            <textarea class="form-control" id="assignmentText" rows="3"></textarea>
-          </div>
-          <button style="background-color: gold; color: black;" type="submit" class="btn btn-primary">ایجاد تکلیف</button>
-        </form>
-      </div>
-    </body>
-    </html>
-    
-    <footer class="my-footer">
-
-      <div class="card install-back fixed-bottom ">
-
-          <button class="btn btn-light mt-1 start-0 position-absolute">نصب</button>
-          <div class="end-0 card-text mt-1 card-text-footer text-light">برای تجربه بهتر برنامه آزمون ساز را نصب کن</div>
-
-      </div>
-  </footer>
+  position: absolute;
+  float: right;
+}
+  </style>
   
+</head>
+
+<body style="background-color: #305cbc;">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"
+        ><img
+          width="40px"
+          height="40px"
+          class="rounded-circle"
+          src="/images/New Project.jpg"
+          alt="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./about_us.html">درباره ی ما</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="./why_us.html">شبکه های اجتماعی</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              ><img
+                width="50px"
+                height="50px"
+                src="/images/boy.png"
+                alt="image"
+            /></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./dashboard.html">داشبورد</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./homework_teach.html"
+                  >ایجاد امتحان</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./exam_tea.html"
+                  >ایجاد تکلیف</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h2 style="text-align: center;">پنل معلم</h2>
+    <form>
+      <div class="form-group">
+        <label for="classSelect">نام کلاس:</label>
+        <select class="form-control" id="classSelect">
+          <option>کلاس ۱</option>
+          <option>کلاس ۲</option>
+          <option>کلاس ۳</option>
+          <!-- و غیره -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="lessonSelect">نام درس:</label>
+        <select class="form-control" id="lessonSelect">
+          <option>ریاضی</option>
+          <option>فیزیک</option>
+          <option>زبان انگلیسی</option>
+          <!-- و غیره -->
+        </select>
+      </div>
+
+      <br>
+      <div class="container grid justify-content-center text-light" dir="rtl">
+          <form action="">
+            <label for="practice">نام تمرین</label>
+            <br>
+            <input type="text" name="name" id="practice">
+            <br><br>
+
+            <label for="description">توضیحات (اختیاری، با فرمت Markdown)</label>
+            <br>
+            <textarea id="description" name="description" rows="4" cols="50"></textarea>
+            <br><br>  
+            <div class="row">
+              <div class="col-3">
+
+              
+              <label for="time_start">زمن شروع</label>
+              <br>
+              <input type="datetime-local" id="time_start">
+            </div>
+            <br><br>
+            <div class="col-3">
+
+              <label for="time_end">زمان پایان</label>
+              <br>
+              <input type="datetime-local" id="time_end">
+            </div>
+           
+            </div>
+            <br>
+            <br>
+            <form action="">
+              <input type="file" id="myFile" name="filename">
+            </form>
+
+
+            
+          </form>
+      </div>
+
+      <input type="submit" value="ساخت تکلیف" class="bg-warning">
+    </form>
+  </div>
+  <div>
+    <footer>
+        <div class="card install-back fixed-bottom">
+            <button class="btn btn-light mt-1 start-0 position-absolute">نصب</button>
+            <div class="end-0 card-text mt-1 card-text-footer text-light">برای تجربه بهتر برنامه آزمون ساز را نصب کن</div>
+        </div>
+</footer>
+
 </body>
 </html>
